@@ -203,6 +203,31 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+/* INFO Overlay */
+.info-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.info-cover-text {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--footer-studio);
+  background-color: var(--logo-web);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 164px;
+  padding-right: 32px;
+  height: 100%;
+  top: 0;
+  transform: translatey(100%);
+  transition: transform 300ms linear;
+}
+.image:hover .info-cover-text {
+  transform: translatey(0);
+}
 .image-title {
   font-family: "Roboto";
   font-style: normal;
