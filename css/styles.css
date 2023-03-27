@@ -443,6 +443,7 @@ img {
 .footer-soc-link:focus {
   background-color: var(--hover-footer);
 }
+
 /* ----------------------------------------Studio - Main content------------------------------- */
 .section-main-studio {
   background-repeat: no-repeat;
@@ -599,11 +600,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  top: 88px;
-  left: 516px;
-  right: 516px;
-  bottom: 13px;
-  transform: translatex(-50%, -50%) scale(1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
 }
 .backdrop .is-hidden .modal {
