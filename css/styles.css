@@ -10,7 +10,7 @@
   --footer-color: #e7e9fc;
   --footer-studio: #f4f4fd;
   --icon-color: #8e8f99;
-  --transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 p,
 h1,
@@ -135,6 +135,7 @@ img {
   color: var(--primary-text-color);
   line-height: calc(24 / 16);
   position: relative;
+  transition: color var(--transition-dur-func);
 }
 .header-address {
   font-size: 16px;
@@ -143,11 +144,9 @@ img {
 
 .header-address :hover {
   color: var(--hover);
-  transition: var(--transition);
 }
 .header-address :focus {
   color: var(--focus);
-  transition: var(--transition);
 }
 .list-address {
   display: flex;
@@ -167,6 +166,7 @@ img {
   align-items: center;
   gap: 40px;
   line-height: calc(24 / 16);
+  transition: color var(--transition-dur-func);
 }
 /* Main Content */
 .content-main {
@@ -209,6 +209,9 @@ img {
   box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
   border: none;
   padding: 12px 24px;
+  transition: border-radius var(--transition-dur-func),
+    background var(--transition-dur-func), box-shadow var(--transition-dur-func),
+    color var(--transition-dur-func);
 }
 .botton-main:last-child {
   margin-right: 0;
@@ -242,6 +245,9 @@ img {
 }
 .image:hover .info-cover-text {
   transform: translatey(0);
+}
+.image {
+  transition: box-shadow var(--transition-dur-func);
 }
 .image-title {
   font-family: "Roboto";
@@ -318,6 +324,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-dur-func);
 }
 .soc-card-icons {
   fill: var(--primary-background-color);
@@ -367,6 +374,9 @@ img {
   width: 168px;
   height: 88px;
   border-radius: 4px;
+}
+.customers-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-link {
   width: 100%;
@@ -451,6 +461,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-dur-func);
 }
 .footer-soc-link:hover {
   background-color: var(--hover-footer);
@@ -516,6 +527,7 @@ img {
   border: none;
   display: block;
   margin: 0 auto;
+  transition: background var(--transition-dur-func);
 }
 /* Information */
 
@@ -619,6 +631,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
+  bottom: 100px;
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
