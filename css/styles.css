@@ -662,3 +662,13 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+/* Оформлення мод вікна */
+.modal-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: calc(24 / 16);
+  color: var(--primary-text-color);
+}
