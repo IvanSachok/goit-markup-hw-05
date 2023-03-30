@@ -251,6 +251,9 @@ img {
 .image:hover .info-cover-text {
   transform: translatey(0);
 }
+.info-link:focus .info-cover-text {
+  transform: translatey(0);
+}
 .image {
   transition: box-shadow var(--transition-dur-func);
 }
